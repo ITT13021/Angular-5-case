@@ -1,6 +1,6 @@
 ## FOREWORD
-	Recently,My Boss let me understand the Angular 5.Because my company user ionic 1 to develop an hybrid application. And the ionic 1 is use Angular 1.x ，that is so old. we need to update.
-	   It's my first time to touch the Angular 5 also, so I was meet  many difficulties in the learning process.And the Angular 5 has many new knowledge points. (E.g: TypeScript、RxJS ... )
+Recently,My Boss let me understand the Angular 5.Because my company user ionic 1 to develop an hybrid application. And the ionic 1 is use Angular 1.x ，that is so old. we need to update.
+It's my first time to touch the Angular 5 also, so I was meet  many difficulties in the learning process.And the Angular 5 has many new knowledge points. (E.g: TypeScript、RxJS ... )
 	   
 ## SUBJECT
 
