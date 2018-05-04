@@ -1,0 +1,33 @@
+<div id="isLogin" class="alert alert-warning" *ngIf="!userToken">
+    <strong>您尚未登录，即将跳转至登录页面...</strong>
+</div>
+<div class="container" *ngIf="userToken">
+    <h2>My Schedules
+        <button type="button" class="btn btn-info" style="margin-left: 20px" routerLink="/scheduledetail/0">Create
+        </button>
+    </h2>
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>content</th>
+            <th>action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let schedule of schedules">
+            <td>{{schedule.id}}</td>
+            <td>{{schedule.title}}</td>
+            <td>{{schedule.content}}</td>
+            <td>
+                <button type="button" class="btn btn-danger" (click)="edit(schedule.id)">Edit</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-danger" (click)="deleteSchedule(schedule.id)">Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

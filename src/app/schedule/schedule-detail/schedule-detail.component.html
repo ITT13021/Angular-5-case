@@ -1,0 +1,23 @@
+<div class="container" *ngIf="scheduleDetail">
+    <h2>Schedule Detail</h2>
+    <div class="card">
+        <div class="card-body">
+            <form id="scheduleDetail" class="bs-example bs-example-form" role="form">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">title</span>
+                    <input name="title" type="text" class="form-control" [(ngModel)]="scheduleDetail.title" placeholder="title">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">content</span>
+                    <input name="content" type="text" class="form-control" [(ngModel)]="scheduleDetail.content" placeholder="content">
+                </div>
+            </form>
+            <div style="margin-top: 20px">
+                <button type="button" class="btn btn-info card-link" (click)="goBack()">back</button>
+                <button type="button" class="btn btn-danger card-link" (click)="updateOrCreateSchedule(scheduleDetail)">
+                    完成
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

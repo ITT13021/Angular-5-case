@@ -1,0 +1,16 @@
+#loginBox{
+    height: 350px;
+    max-width: 400px;
+    border: 1px solid #eae5e5;
+    padding: 20px 50px;
+    margin: auto
+}
+
+#loginBox h2{
+    margin-left: -50px;
+    margin-top: -20px;
+}
+
+#loginBox form{
+    margin-top: 50px;
+}
